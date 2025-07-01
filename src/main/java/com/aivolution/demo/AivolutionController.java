@@ -39,12 +39,12 @@ public class AivolutionController {
 			// Construct data
 			String apiKey = "apikey=" + "NTU3NjM5MzI0OTZmMzk1YTY1NGQ2OTZlNDM2MjYzNTc=";
 			String message = "&message=Hi there, thank you for sending your first test message from Textlocal. Get 20% off today with our code:"+otp;
-			String sender = "&sender=" + "CP-600010";
+			String sender = "&sender=" + "TXTLCL";
 			String numbers = "&numbers=" + number;
 
 			// Send data https://api.txtlocal.com/send/?
 			// ==>https://api.textlocal.in/Dynamic/?
-			HttpURLConnection conn = (HttpURLConnection) new URL("https://api.textlocal.in/Dynamic/?").openConnection();
+			HttpURLConnection conn = (HttpURLConnection) new URL("https://api.txtlocal.com/send/?").openConnection();
 			String data = apiKey + numbers + message + sender;
 			conn.setDoOutput(true);
 			conn.setRequestMethod("POST");
