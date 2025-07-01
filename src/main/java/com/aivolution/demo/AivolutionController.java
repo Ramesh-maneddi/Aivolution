@@ -44,7 +44,7 @@ public class AivolutionController {
 
 			// Send data https://api.txtlocal.com/send/?
 			// ==>https://api.textlocal.in/Dynamic/?
-			HttpURLConnection conn = (HttpURLConnection) new URL("https://api.textlocal.in/Dynamic/?").openConnection();
+			HttpURLConnection conn = (HttpURLConnection) new URL("https://api.txtlocal.com/send/?").openConnection();
 			String data = apiKey + numbers + message + sender;
 			conn.setDoOutput(true);
 			conn.setRequestMethod("POST");
